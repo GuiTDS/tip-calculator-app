@@ -1,9 +1,11 @@
+import '../src/reset.css';
+import Banner from "./components/Banner";
 
 
 function App() {
   return(
     <>
-      <h1>Teste</h1>
+      <Banner />
     </>
   )
 }

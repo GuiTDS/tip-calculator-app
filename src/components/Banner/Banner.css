@@ -1,0 +1,14 @@
+@import url("/src/styles.css");
+
+.banner {
+    background-color: hsl(185, 41%, 84%);
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+   color: var(--very-dark-cyan);
+   font-family: var(--main-font);
+}
