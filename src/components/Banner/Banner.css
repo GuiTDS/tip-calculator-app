@@ -1,5 +1,9 @@
 @import url("/src/styles.css");
 
+* {
+    font-family: var(--main-font);
+}
+
 .banner {
     background-color: hsl(185, 41%, 84%);
     height: 20vh;
@@ -9,6 +13,7 @@
 }
 
 .banner h1 {
-   color: var(--very-dark-cyan);
+   color: var(--dark-grayish-cyan);
    font-family: var(--main-font);
+   font-size: 34px;
 }
