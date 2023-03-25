@@ -1,8 +1,16 @@
 .form {
+    font-family: var(--main-font);
     background-color: var(--white);
     position: relative;
     height: 100vh;
     top: -20px;
     padding: 2rem;
     border-radius: 30px;
+}
+
+.form__btn {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
 }

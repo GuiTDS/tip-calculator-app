@@ -1,0 +1,21 @@
+.results {
+    background-color: var(--very-dark-cyan);
+    width: 100%;
+    height: 30vh;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 1.5rem;
+}
+
+.results__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.results button {
+    width: 100%;
+    background-color: var(--grayish-cyan);
+    padding: 1rem;
+    margin-top: 1rem;
+}
