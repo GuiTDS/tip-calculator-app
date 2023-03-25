@@ -5,6 +5,7 @@
     border-radius: 30px;
     box-sizing: border-box;
     padding: 1.5rem;
+    color: var(--white);
 }
 
 .results__container {
@@ -18,4 +19,10 @@
     background-color: var(--grayish-cyan);
     padding: 1rem;
     margin-top: 1rem;
+    border-radius: 10px;
+    color: var(--dark-grayish-cyan);
+}
+
+.container__info p:last-child {
+    color: var(--dark-grayish-cyan);
 }
