@@ -14,3 +14,30 @@
     flex-wrap: wrap;
     margin-bottom: 2rem;
 }
+
+@media screen and (min-width: 1440px) {
+    .form {
+        display: flex;
+        z-index: 2;
+        height: 60vh;
+        width: 70vw;
+        justify-content: space-between;
+        left: 13%;
+        top: 8rem;
+    }
+
+    .form-container {
+        width: 90vw;
+        margin-right: 2rem;
+    }
+
+    .form__btn {
+        margin: 2rem 0 4.5rem;
+    }
+
+    .form-container h2 {
+        margin-bottom: 1rem;
+    }
+
+    
+}

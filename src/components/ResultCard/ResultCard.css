@@ -26,3 +26,20 @@
 .container__info p:last-child {
     color: var(--dark-grayish-cyan);
 }
+
+@media screen and (min-width: 1440px) {
+    .results {
+        height: 55vh;
+        padding-top: 3rem;
+    }
+
+    .results__container {
+        margin-bottom: 4rem;
+    }
+
+    .results__btn {
+        margin-top: 5rem;
+    }
+
+    
+}

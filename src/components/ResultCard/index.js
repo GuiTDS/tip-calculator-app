@@ -17,8 +17,11 @@ const ResultCard = (props) => {
                 </div>
                 <h2>{props.total}</h2>
             </div>
-            <button>CALCULATE</button>
-            <button onClick={props.reset}>RESET</button>
+            <div className='results__btn'>
+                <button>CALCULATE</button>
+                <button onClick={props.reset}>RESET</button>    
+            </div>
+            
         </section>
     )
 }

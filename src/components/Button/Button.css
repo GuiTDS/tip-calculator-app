@@ -10,3 +10,9 @@
 .button-active {
     background-color: blue;
 }
+
+@media screen and (min-width: 1440px) {
+    .button {
+        width: 30%;
+    }
+}

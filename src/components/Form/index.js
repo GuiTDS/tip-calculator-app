@@ -54,22 +54,25 @@ const Form = (props) => {
 
     return (
         <form className='form' onSubmit={updateData}>{/* onChange function here to calculate the result, onSubmit to reset all values */}
-            <Input value={bill} inputName="Bill" onChangeInput={value => setBill(value)} required={true} type='number'/>
+            <div className='form-container'>
+                <Input value={bill} inputName="Bill" onChangeInput={value => setBill(value)} required={true} type='number'/>
                 <h2>Select tip %</h2>
-                <div className='form__btn'>
-                    {btn.map(btn =>
-                        <Button key={btn.value} value={btn.value} color='hsl(0, 0%, 100%)' background={btn.backgroundColor} getBtnValue={event => {
-                            event.preventDefault();
-                            console.log(event.target.value);
-                            setTipPercentage(event.target.value);
-                            console.log(tipPercentage);
-                        }
-                    } />
-                        )} 
-                    <Button key='custom' value='Custom' background='hsl(189, 41%, 97%)' color='hsl(186, 14%, 43%)'/>   
-                </div>
-                <Input value={numberPeople} inputName='Number of People' type='number'  required={true} onChangeInput={value => setNumberPeople(value)}/>
-                <ResultCard tipAmount={tipAmountPerson} total={totalPerson} reset={resetData}/>  
+                    <div className='form__btn'>
+                        {btn.map(btn =>
+                            <Button key={btn.value} value={btn.value} color='hsl(0, 0%, 100%)' background={btn.backgroundColor} getBtnValue={event => {
+                                event.preventDefault();
+                                console.log(event.target.value);
+                                setTipPercentage(event.target.value);
+                                console.log(tipPercentage);
+                            }
+                        } />
+                            )} 
+                        <Button key='custom' value='Custom' background='hsl(189, 41%, 97%)' color='hsl(186, 14%, 43%)'/>   
+                    </div>
+                <Input value={numberPeople} inputName='Number of People' type='number'  required={true} onChangeInput={value => setNumberPeople(value)}/>    
+            </div>
+            
+            <ResultCard tipAmount={tipAmountPerson} total={totalPerson} reset={resetData}/>  
         </form>      
 
     )
