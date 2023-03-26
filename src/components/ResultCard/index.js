@@ -8,16 +8,17 @@ const ResultCard = (props) => {
                     <p>Tip amount</p>
                     <p>/ person</p>
                 </div>
-                <h2>{props.value}</h2>
+                <h2>{props.tipAmount}</h2>
             </div>
             <div className='results__container'>
                 <div className='container__info'>
                     <p>Total</p>
                     <p>/ person</p>
                 </div>
-                <h2>{props.value}</h2>
+                <h2>{props.total}</h2>
             </div>
-            <button>RESET</button>
+            <button>CALCULATE</button>
+            <button onClick={props.reset}>RESET</button>
         </section>
     )
 }

@@ -3,7 +3,6 @@ import './Button.css';
 const Button = (props) => {
     const onClickBtn = (event) => {
         props.getBtnValue(event);
-        /* console.log(event.target.value); */
      }
 
     return (
