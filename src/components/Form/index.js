@@ -40,9 +40,8 @@ const Form = (props) => {
         event.preventDefault();
         const total = bill / numberPeople;
         const tipPerPerson = (bill * (tipPercentage / 100)) / numberPeople;
-        setTotalPerson(total);
+        setTotalPerson(total+tipPerPerson);
         setTipAmountPerson(tipPerPerson);
-        console.log('entrou no updateData');
     }
     
     const resetData = () => {
@@ -69,10 +68,9 @@ const Form = (props) => {
                         )} 
                     <Button key='custom' value='Custom' background='hsl(189, 41%, 97%)' color='hsl(186, 14%, 43%)'/>   
                 </div>
-                <Input value={numberPeople} inputName='Number of People' type='number' onChangeInput={value => setNumberPeople(value)}/>
+                <Input value={numberPeople} inputName='Number of People' type='number'  required={true} onChangeInput={value => setNumberPeople(value)}/>
                 <ResultCard tipAmount={tipAmountPerson} total={totalPerson} reset={resetData}/>  
-        </form> 
-            
+        </form>      
 
     )
 }

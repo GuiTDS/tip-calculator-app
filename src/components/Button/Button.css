@@ -6,3 +6,7 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+.button-active {
+    background-color: blue;
+}

@@ -20,7 +20,7 @@
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 10px;
-    color: var(--dark-grayish-cyan);
+    color: var(--very-dark-cyan);
 }
 
 .container__info p:last-child {
